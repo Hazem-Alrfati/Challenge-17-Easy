@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.page {
+  padding: 50px 30px;
+  background-color: white;
+}
+
+.page .container {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:1023px) {
+  .page .container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+}
+
+.page .container .box {
+  background-color: #242424;
+  height: 510px;
+  border-right: 1px solid #3b3b3b;
+}
+
+.page .container .bf {
+  padding-top: 20px;
+  height: 550px;
+  margin-top: -20px;
+  background-color: #03A9F4;
+}
+
+.page .container .box.bf ul li button {
+  background-color: #03A9F4;
+}
+
+.page .container .box .top {
+  padding: 50px 70px;
+  text-align: center;}
+
+.page .container .box .top h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.page .container .box .top div {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.page .container .box .top div span:first-child {
+  font-size: 18px;
+  vertical-align: text-top;
+
+}
+
+.page .container .box .top div span:last-child {
+  word-spacing: -1.5px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+
+.page .container .box ul li {
+  padding: 15px;
+  width: 250px;
+  font-size: 15px;
+  text-align: center;
+  border-top: 1px solid #3b3b3b;
+  color: #717272;
+}
+
+.page .container .box ul li:nth-child(even) {
+  background-color: #2A2A2A;
+}
+
+.page .container .box.bf ul li {
+  color: white;
+  border-color: rgb(197, 196, 196);
+  background-color: #03A9F4;
+}
+
+.page .container .box ul li:last-child {
+  padding: 40px;
+}
+
+.page .container .box ul li:last-child button {
+  border: 1px solid #717272;
+  color: white;
+  outline: none;
+  background-color: #242424;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.page .container .box.bf ul li:last-child button  {
+  background-color: #03A9F4;
+  border-color: white;
+}
